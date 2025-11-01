@@ -11,6 +11,17 @@
             color: white;
         }
 
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .container div {
+            background-color: gray;
+            text-align: center;
+            margin: 10px;
+        }
+
         img {
             height: 200px;
             width: 300px;
@@ -20,8 +31,10 @@
 
 </head>
 <body>
-    <div><img src="Images/Banaue-terrace.jpg" alt="Banaue Terrace"></div>
-    <div><img src="Images/Chocolate_Hills_Bohol.jpg" alt="Chocolate Hills Bohol"></div>
-    <div><img src="Images/Intramuros.jpg" alt="Intramuros"></div>
+    <div class="container">
+        <div><img src="Images/Banaue-terrace.jpg" alt="Banaue Terrace"></div>
+        <div><img src="Images/Chocolate_Hills_Bohol.jpg" alt="Chocolate Hills Bohol"></div>
+        <div><img src="Images/Intramuros.jpg" alt="Intramuros"></div>
+    </div>
 </body>
 </html>
